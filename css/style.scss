@@ -138,30 +138,30 @@ section.slider {
             }
         }
         button.slide01 {
-            left: calc(50% - 40px);
+            left: calc(50% - 42px);
             &:hover ~ .slideshow-wrapper {
-                animation: none;
+                animation: slideshow paused;
                 left: 0%;
             }
         }
         button.slide02 {
-            left: calc(50% - 13px);
+            left: calc(50% - 14px);
             &:hover ~ .slideshow-wrapper {
-                animation: none;
+                animation: slideshow paused;
                 left: -100%;
             }
         }
         button.slide03 {
-            left: calc(50% + 13px);
+            left: calc(50% + 14px);
             &:hover ~ .slideshow-wrapper {
-                animation: none;
+                animation: slideshow paused;
                 left: -200%;
             }
         }
         button.slide04 {
-            left: calc(50% + 40px);
+            left: calc(50% + 42px);
             &:hover ~ .slideshow-wrapper {
-                animation: none;
+                animation: slideshow paused;
                 left: -300%;
             }
         }
