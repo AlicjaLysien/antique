@@ -1,8 +1,8 @@
 # Atntique shop
 
 ### Technologies and libraries
-- HTML and CSS (SASS) only
-- Grid
+- HTML and CSS (SCSS) only
+- Grid (collumn-row and grid-area)
 - Fontawesome
 
 ### What is project about?

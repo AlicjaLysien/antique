@@ -5,6 +5,9 @@ $lightBrownHover: #ccbab0;
 $brown: #3a1702;
 $darkBrown: #1a0a00;
 
+$max-width: 1200px;
+$max-width-smaller: 600px;
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +24,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: $max-width;
     flex-wrap: wrap;
     ul {
         display: flex;
@@ -54,7 +57,7 @@ body {
 }
 
 nav {
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 20px auto 0;
     ul {
         display: flex;
@@ -84,7 +87,7 @@ nav {
 
 section.slider {
     height: 70vh;
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 20px auto;
     display: flex;
     .banner {
@@ -202,7 +205,7 @@ section.products {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50vh);
     grid-gap: 20px;
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 20px auto 0;
     div {
         background: $lightBrown;
@@ -254,7 +257,7 @@ section.gallery {
     grid-template-columns: repeat(8, minmax(1rem, 1fr));
     grid-template-rows: repeat(3, 10vw);
     grid-gap: 20px;
-    max-width: 1200px;
+    max-width: $max-width;
     margin: 20px auto;
     div {
         overflow: hidden;
@@ -327,7 +330,7 @@ section.gallery {
 @media ( max-width: 600px ) {
     section.slider {
         height: 50vh;
-        max-width: 600px;
+        max-width: $max-width-smaller;
         .banner {
             h1 {
                 font-size: 2rem;
@@ -338,7 +341,7 @@ section.gallery {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 20vh);
-        max-width: 600px;
+        max-width: $max-width-smaller;
         .product01 {
             grid-area: 1 / 1 / 2 / 2;
         }
@@ -366,7 +369,7 @@ section.gallery {
         grid-template-columns: repeat(2, minmax(1rem, 1fr));
         grid-template-rows: repeat(8, 10vw);
         grid-gap: 10px;
-        max-width: 600px;
+        max-width: $max-width-smaller;
         .gallery01 {
             grid-area: 1 / 1 / 2 / 2;
         }
